@@ -57,7 +57,8 @@ elif [ "$NODE_INDEX" = "3" ]; then
   #cd Python-3.8.9
   #./configure --enable-optimizations
   #sudo make altinstall
-  pyenv update
+  curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+  exec $SHELL
   pyenv --version
   pyenv install --list 
   pyenv install 3.6.3
