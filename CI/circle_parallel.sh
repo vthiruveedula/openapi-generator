@@ -57,6 +57,7 @@ elif [ "$NODE_INDEX" = "3" ]; then
   #cd Python-3.8.9
   #./configure --enable-optimizations
   #sudo make altinstall
+  rm -Rf /opt/circleci/.pyenv
   curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
   exec $SHELL
   pyenv --version
