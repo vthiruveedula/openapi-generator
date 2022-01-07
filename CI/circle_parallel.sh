@@ -58,7 +58,7 @@ elif [ "$NODE_INDEX" = "3" ]; then
   #./configure --enable-optimizations
   #sudo make altinstall
   sudo apt-get update
-  sudo apt-get install libssl-dev
+  sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
   rm -Rf /opt/circleci/.pyenv
   curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
   source ~/.bash_profile
