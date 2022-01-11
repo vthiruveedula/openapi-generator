@@ -57,8 +57,8 @@ elif [ "$NODE_INDEX" = "3" ]; then
   #cd Python-3.8.9
   #./configure --enable-optimizations
   #sudo make altinstall
-  sudo apt-get update
-  sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl openssl
+  #sudo apt-get update
+  #sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl openssl
   rm -Rf /opt/circleci/.pyenv
   curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
   source ~/.bash_profile
