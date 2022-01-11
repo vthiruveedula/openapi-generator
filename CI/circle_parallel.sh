@@ -66,8 +66,8 @@ elif [ "$NODE_INDEX" = "3" ]; then
   pyenv install --list 
   pyenv install 3.6.3
   #ls -l $HOME/openssl/include
-  #CPPFLAGS=-I$HOME/openssl/include LDFLAGS=-L$HOME/openssl/lib SSH=$HOME/openssl pyenv install 3.9.0
-  pyenv install 3.9.0
+  CONFIGURE_OPTS="--with-openssl=/usr/include/openssl" pyenv install 3.9.0
+  #pyenv install 3.9.0
 
   pyenv global 3.6.3
   python3 --version
