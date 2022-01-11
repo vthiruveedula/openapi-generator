@@ -67,8 +67,8 @@ elif [ "$NODE_INDEX" = "3" ]; then
   pyenv install 3.6.3
   ls -l /usr/include/openssl
   #CONFIGURE_OPTS="--with-openssl=/usr/include/openssl" pyenv install 3.9.0
-  wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz
-  tar zxvf openssl-1.1.1g.tar.gz
+  wget --no-check-certificate https://www.openssl.org/source/openssl-1.1.1g.tar.gz
+  tar zxvf openssl-1.1.1g.tar.gz 
   cd openssl-1.1.1g
   ./config --prefix=/home/circleci/openssl --openssldir=/home/circleci/openssl no-ssl2
   make
